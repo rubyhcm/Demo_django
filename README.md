@@ -102,3 +102,7 @@ Add model to admin in mysite/news/admin.py
 #### Create requirement.txt
 
 `pip freeze > requirements.txt`
+
+#### Delete old image
+
+`pip install django-cleanup`
