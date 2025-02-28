@@ -94,3 +94,11 @@ Search with search_fields
 
 Create models in mysite/news/models.py and Add app into mysite/mysite/settings.py
 Add model to admin in mysite/news/admin.py
+
+#### Create foreign key
+
+`category = models.ForeignKey(Category, on_delete=models.CASCADE)`
+
+#### Create requirement.txt
+
+`pip freeze > requirements.txt`
