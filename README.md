@@ -51,6 +51,14 @@ cd mysite
 python manage.py startapp news
 ```
 
+```python
+# Generate migrations of app news
+python manage.py makemigrations news
+
+# Run migrations
+python manage.py migrate
+```
+
 #### Run
 
 ```
@@ -62,3 +70,27 @@ python mysite/manage.py runserver 8080
 
 Run migrations: `python manage.py migrate`
 Create admin user: `python manage.py createsuperuser`
+
+`source /home/nguyenloi/Desktop/demo-django/myenv/bin/activate`
+`sudo apt-get install libmysqlclient-dev`
+`pip install mysqlclient`
+
+or
+
+`pip install PyMySQL`
+
+```python
+# mysite/mysite/__init__.py
+import pymysql
+pymysql.install_as_MySQLdb()
+```
+
+Config database: mysite/mysite/settings.py
+
+Filter with list_filter
+Search with search_fields
+
+#### Create model
+
+Create models in mysite/news/models.py and Add app into mysite/mysite/settings.py
+Add model to admin in mysite/news/admin.py
